@@ -339,9 +339,9 @@ function dis(name){
    document.write(b+"<br>");
    b++;
  }
- function isPalindrome(s) {
-  return s == s.split("").reverse().join("");
-}
+//  function isPalindrome(s) {
+//   return s == s.split("").reverse().join("");
+// }
 
-alert(isPalindrome("malayalam")); 
-alert(isPalindrome("english")); 
+// alert(isPalindrome("malayalam")); 
+// alert(isPalindrome("english")); 
