@@ -315,14 +315,33 @@ document.write(result+"<br>");
 document.write(result1+"<br>");
 document.write(result2+"<br>");
 
-function second(a,b){
- document.write("(Argument):"+a+b)
-}
-second (2,3);
+function dis(name){
+  document.write(arguments[0]+"<br>");
+ 
 
-function sum()
-{
-    var FirstNumber = 1;
-    var SecondNumber = document.getElementById('txtSecondNumber').value;
-    alert(parseInt(FirstNumber) + parseInt(SecondNumber));
 }
+ dis ("(squares argument):"+"samawa");
+
+ function factorial(x) 
+ { 
+ 
+   if (x === 0)
+  {
+     return 1;
+  }
+   return x * factorial(x-1);
+          
+ }
+ document.write("(factorial):"+factorial(5)+"<br>");
+ 
+ var b = 1;
+ while (b<11){
+   document.write(b+"<br>");
+   b++;
+ }
+ function isPalindrome(s) {
+  return s == s.split("").reverse().join("");
+}
+
+alert(isPalindrome("malayalam")); 
+alert(isPalindrome("english")); 
